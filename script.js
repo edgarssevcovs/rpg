@@ -266,7 +266,8 @@ function enemyAttack() {
             document.querySelector('.enemy-events').innerText = 'Enemy missed';
         }
         
-        if (player.health === 0) {
+        if (player.health < 1) {
+            console.log('player died!');
             document.querySelector('.enemy-events').innerText = 'Player died';
             document.querySelector('.player-events').innerText = '';
         }
