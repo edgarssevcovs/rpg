@@ -1,0 +1,184 @@
+
+
+* {
+    font-family: calibri;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: 40px 600px;
+    grid-template-areas: "player_stats" "game_window";
+}
+
+.player_stats {
+    display: grid;
+    grid-area: player_stats;
+    grid-template-columns: 15% 25% 20% 20% 20%;
+    grid-template-rows: 40px;
+    grid-template-areas: "player-level player-hp player-gold player-xp player-inventory";
+    background-color: #666;
+    border: 2px solid #000;
+}
+
+.player-level {
+    grid-area: player-level;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.player-hp {
+    grid-area: player-hp;
+}
+
+.player-hp-value {
+    padding-left: 65px;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.player-gold {
+    grid-area: player-gold;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.player-xp {
+    grid-area: player-xp;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.player-inventory {
+    grid-area: player-inventory;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.game_window {
+    grid-area: game_window;
+    background-color: #888;
+}
+
+.shop {
+    background-image: url('shop.jpg');
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 600px;
+    padding-top: 50px;
+}
+
+.shop-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 500px;
+    height: 500px;
+    border-radius: 8px; 
+    margin: 0 auto;
+    
+}
+
+.label {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.shop-item {
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 30px 10px 30px;
+}
+
+meter {
+    width: 200px;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+.player-inventory-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 500px;
+    height: 500px;
+    border-radius: 8px; 
+    margin: 0 auto;
+}
+
+.player-inventory-bg {
+    background-image: url('inventory.png');
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 600px;
+    padding-top: 50px;
+}
+
+.inventory-potions {
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 30px 10px 30px;
+}
+
+.inventory-diamonds {
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 30px 10px 30px;
+}
+
+.fight {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 400px;
+    grid-template-areas: "player-stats enemy-img enemy-stats";
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+  }
+
+.player-stats {
+    grid-area: player-stats;
+    border: 2px solid #000;
+}
+
+.enemy-img {
+    grid-area: enemy-img;
+}
+
+.enemy-img img {
+    margin: 0 auto;
+    padding-left: 140px;
+    padding-top: 10px;
+}
+
+.enemy-stats {
+    grid-area: enemy-stats;
+    border: 2px solid #000;
+}
+
+.player-events {
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 30px 10px 30px;
+}
+
+.enemy-events {
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 30px 10px 30px;
+}
+
+.enemy-events2 {
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 30px 10px 30px;
+}
